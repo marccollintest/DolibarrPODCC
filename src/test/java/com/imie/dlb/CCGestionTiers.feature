@@ -17,3 +17,15 @@ Examples:
 |Nom|Ville|
 |Marc|Rennes|
 
+#Scenario Outline:  Modification d'un client
+#Given le client "<Nom>" est créé
+#	When  Je selectionne le client "<Nom>"
+#	And je modifie la ville par "<ville>"
+#	And je valide la page client
+#	And Je selectionne le client "<Nom>"
+#	Then la ville est "<ville>"
+#	And je ferme le navigateur
+#
+#Examples:
+#|Nom|Ville|
+#|Marc|Nantes|

@@ -88,7 +88,7 @@ public class CCAccesAppliSteps extends RootTest{
 
 	@Then("^La page affichée est la page d'acccueil$")
 	public void la_page_affichée_est_la_page_d_acccueil() throws Throwable {
-		assertPageAccueilTitle();
+		assertEquals(DoliMainPage.TITLE, _currentPage.getTitle());
 	}
 
 	@Then("^L'utilisateur connecté est \"([^\"]*)\"$")
